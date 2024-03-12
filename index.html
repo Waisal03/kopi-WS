@@ -46,7 +46,8 @@
         <div class="navbar-extra">
             <a href="#" id="search-button"><i data-feather="search"></i></a>
             <a href="#" id="shopping-cart-button">
-                <i data-feather="shopping-cart"></i><span class="quantity-badge" x-show="$store.cart.quantity"
+                <i data-feather="shopping-cart"></i>
+                <span class="quantity-badge" x-show="$store.cart.quantity"
                     x-text="$store.cart.quantity"></span>
             </a>
             <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
@@ -173,7 +174,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim suscipit cum totam atque tempore quos.</p>
 
         <div class="row">
-            <template x-for="(item, index) in items" x-keys="index">
+            <template x-for="(item, index) in items" x-key="index">
                 <div class="product-card">
                     <div class="product-icons">
                         <a href="#" @click.prevent="$store.cart.add(item)">
