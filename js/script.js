@@ -27,8 +27,6 @@ document.querySelector('#shopping-cart-button').onclick = (e) => {
 }
 
 
-
-
 //klik di luar element
 const hm = document.querySelector('#hamburger-menu');
 const sb = document.querySelector('#search-button');
